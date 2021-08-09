@@ -65,6 +65,7 @@ def main(input)
     puts item.to_s
   end
 
+  taxes = taxes + 0.05 - (taxes % 0.05)
   puts "Sales Taxes: #{ taxes.round(2) }"
   puts "Total: #{ total.round(2) }"
 end
